@@ -23,6 +23,10 @@ header {
   margin-right: 100px;
 }
 
+h1 {
+  text-align:center;
+}
+
 button{
   height: 60px;
   width: 180px;
