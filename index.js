@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
+var bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/public'))
+app.use(bodyParser());
+app.use(express.static(__dirname + '/public'));
 
-http.listen(8000, function(){
+app.listen(8000, function(){
   console.log('listening on *:8000');
 });
